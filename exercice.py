@@ -6,17 +6,36 @@ from typing import List
 
 
 def convert_to_absolute() -> float:
-    return 0.0
+    nbr = input("Entrez un nombre: ")
+    return abs(float(nbr))
 
 
 def use_prefixes() -> List[str]:
     prefixes, suffixes = 'JKLMNOP', 'ack'
+    result = []
 
-    return [""]
+    for letter in prefixes :
+        result.append(letter + suffixes)
+
+    return result
+#    return [letter + suffixe for letter in prefixes] only one line
 
 
 def prime_integer_summation() -> int:
-    return 0
+    result = 2  #Start with 2 car est nbr premier mais n'entre pas dans while
+    current_nbr = 2
+
+    while current_nbr < 100 :   
+        i = 2
+
+        while (i < current_nbr) and (current_nbr % i) != 0 :
+            i += 1
+            if i == current_nbr :
+                result += current_nbr
+
+        current_nbr += 1
+
+    return result
 
 
 def factorial(number: int) -> int:
@@ -24,6 +43,8 @@ def factorial(number: int) -> int:
 
 
 def use_continue() -> None:
+
+    #for in :
     pass
 
 
