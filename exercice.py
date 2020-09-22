@@ -20,7 +20,7 @@ def use_prefixes() -> List[str]:
     return result
 #    return [letter + suffixe for letter in prefixes] only one line
 
-
+# Code trouvé sur internet - comme demandé en cours
 def prime_integer_summation() -> int:
     result = 2  #Start with 2 car est nbr premier mais n'entre pas dans while
     current_nbr = 2
@@ -39,13 +39,23 @@ def prime_integer_summation() -> int:
 
 
 def factorial(number: int) -> int:
-    return 0
+    i = 1
+    result = 1
+
+    while i <= number :
+        result *= i
+        i += 1
+
+    return result
 
 
 def use_continue() -> None:
 
-    #for in :
-    pass
+    for i in range(1, 11, 1) :
+        if(i == 5) : 
+            continue
+        else :
+            print(i)
 
 
 def main() -> None:
