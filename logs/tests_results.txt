@@ -28,6 +28,6 @@ Traceback (most recent call last):
 AssertionError: 1060 != 24133 : Retrait du mauvais caractère
 
 ----------------------------------------------------------------------
-Ran 3 tests in 0.002s
+Ran 3 tests in 0.001s
 
 FAILED (failures=2)
