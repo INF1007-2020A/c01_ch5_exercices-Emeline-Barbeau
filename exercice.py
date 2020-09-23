@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+import math
 
 from typing import List
 
@@ -47,6 +47,7 @@ def factorial(number: int) -> int:
         i += 1
 
     return result
+ #  return math.factorial(number)   
 
 
 def use_continue() -> None:
